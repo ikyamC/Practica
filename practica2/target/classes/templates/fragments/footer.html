@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<body class="flex flex-col min-h-screen">
+<main class="flex-1">
+    <article th:fragment="footer" class="w-full h-full flex items-center justify-around">
+        <footer class="footer mt-auto bg-light text-center bg-success fixed-bottom">
+            <div class="container">
+                <span class="text-muted">Creado por: Maiky Cardona  | &copy;<span th:text="${T(java.time.Year).now()}"></span> | </span>
+            </div>
+        </footer>
+    </article>
+</main>
+</body>
+</html>
